@@ -1,0 +1,308 @@
+{
+  "profile": {
+    "brand_name": "Gonzalo Silman",
+    "source_url": "local",
+    "page_type_category": "Core Marketing",
+    "page_type": "Homepage",
+    "industry": "Personal Brand / Founder",
+    "primary_purpose": "Introduce Gonzalo Silman and convert visitors to a meeting or project review",
+    "main_cta": "Book a meeting",
+    "copy_tone": ["Direct", "Matter-of-fact", "Understated"],
+    "brand_signature": "Warm cream editorial page with expressive Inter weight contrast and a single orange accent. Minimal chrome, left-aligned content column, Maraoz-style nav and writing list, Tieshun-style section rhythm.",
+    "visual_language": {
+      "keywords": ["editorial", "warm cream", "orange accent", "expressive type", "minimal chrome"],
+      "accent_strategy": "Orange (#E85D04) for primary CTA and link accents only; cream surfaces and espresso text carry the rest. source: user-override (not Agustín yellow).",
+      "highlights": "H1 weight split (200/600) from agustindorego.com; writing rows with date + title from maraoz.com."
+    },
+    "strategy": {
+      "target_audience": ["Founders and operators evaluating Gonzalo for a role or build", "Investors and peers in LatAm / SF networks"],
+      "executive_synthesis": "Personal landing that borrows Agustín's type and cream chrome, Tieshun's bio and investment list structure, and Maraoz's nav, writing list, and footer. Palette is an intentional orange-on-cream override."
+    },
+    "style_classification": {
+      "primary_style": "Swiss Style / International Typographic Style",
+      "confidence": "High",
+      "category_style": "Historical Movement",
+      "reasoning": "Master reference agustindorego.com: Inter + DM Mono, parchment cream, high type contrast, little chrome."
+    }
+  },
+  "layout": {
+    "classification": ["generous_whitespace", "left_aligned_flush"],
+    "grid": {
+      "columns": 1,
+      "gutter": "24px",
+      "max_width": "720px",
+      "notes": "Content column from tieshunroquerre.com (56em single column) scaled to 720px; page padding 24px mobile / 40px desktop."
+    },
+    "breakpoints": {
+      "mobile": "0px - 639px",
+      "desktop": "640px+"
+    },
+    "section_separation": "Vertical rhythm via section padding (64px desktop / 48px mobile) and 1px #D5CFC4 rules before Writing and Footer. notes: maraoz.com section divider #DCDCDC adapted to parchment family."
+  },
+  "colors": {
+    "baseline": [
+      {
+        "name": "Espresso Black",
+        "type": "Dark",
+        "hex": "#1C1814",
+        "alpha": null,
+        "shades": [],
+        "rules": {
+          "description": "Primary body and heading ink.",
+          "when_to_use": ["Body text", "H1 emphasis word", "Active nav"]
+        }
+      },
+      {
+        "name": "Ash Taupe",
+        "type": "Warm Color",
+        "hex": "#8C867C",
+        "alpha": null,
+        "shades": [],
+        "rules": {
+          "description": "Muted metadata and secondary links.",
+          "when_to_use": ["Nav idle", "Tags", "Dates", "Footer meta"]
+        }
+      }
+    ],
+    "secondary": [
+      {
+        "name": "Warm Cream",
+        "type": "Light",
+        "hex": "#F7F1E8",
+        "alpha": null,
+        "shades": [
+          { "name": "Parchment", "hex": "#EDE8E0", "alpha": null, "aliases": [] },
+          { "name": "Card Cream", "hex": "#FFFBF5", "alpha": null, "aliases": [] },
+          { "name": "Rule", "hex": "#D5CFC4", "alpha": null, "aliases": [] }
+        ],
+        "rules": {
+          "description": "Page and card grounds. Adapted from agustindorego.com Warm Parchment with lighter cream bias. source: user-override.",
+          "when_to_use": ["Page background", "Card surfaces", "Dividers"]
+        }
+      },
+      {
+        "name": "Signal Orange",
+        "type": "Warm Color",
+        "hex": "#E85D04",
+        "alpha": null,
+        "shades": [
+          { "name": "Orange Hover", "hex": "#C44D03", "alpha": null, "aliases": [] },
+          { "name": "Orange Soft", "hex": "#FCE8D8", "alpha": null, "aliases": [] }
+        ],
+        "rules": {
+          "description": "Sole accent for primary CTA and hover accents. source: user-override.",
+          "when_to_use": ["Primary button", "Link hover accent", "Headshot placeholder ring"]
+        }
+      }
+    ],
+    "insights": [
+      "Agustín walnut #4A453E and yellow are NOT used; Signal Orange replaces CTA fill. source: user-override.",
+      "Espresso #1C1814 and Ash #8C867C kept from agustindorego.com for type hierarchy.",
+      "Cream family lightened from #EDE8E0 page bias to #F7F1E8 for a cleaner cream read."
+    ]
+  },
+  "typography": {
+    "titles": {
+      "variants": [
+        {
+          "name": "Inter",
+          "role": "H1 Light",
+          "specs": { "size": "48px", "line_height": "0.96", "font_weight": "200", "font_variation_settings": "" },
+          "technical": { "font_family_css": "Inter, system-ui, sans-serif" },
+          "notes": "agustindorego.com H1 Main (Light)"
+        },
+        {
+          "name": "Inter",
+          "role": "H1 Emphasis",
+          "specs": { "size": "48px", "line_height": "0.96", "font_weight": "600", "font_variation_settings": "" },
+          "technical": { "font_family_css": "Inter, system-ui, sans-serif" },
+          "notes": "agustindorego.com H1 Emphasis (Bold); applied to surname Silman"
+        },
+        {
+          "name": "Inter",
+          "role": "H2 Section",
+          "specs": { "size": "24px", "line_height": "1.2", "font_weight": "500", "font_variation_settings": "" },
+          "technical": { "font_family_css": "Inter, system-ui, sans-serif" },
+          "notes": "tieshunroquerre.com H2 scale with slightly stronger weight for cream field"
+        }
+      ]
+    },
+    "paragraphs": {
+      "description": "Readable body for bio and project copy.",
+      "variants": [
+        {
+          "name": "Inter",
+          "role": "Body",
+          "specs": { "size": "17px", "line_height": "1.55", "font_weight": "400", "font_variation_settings": "" },
+          "technical": { "font_family_css": "Inter, system-ui, sans-serif" },
+          "notes": "Between maraoz 18px/1.6 and tieshun 16px/1.5"
+        }
+      ]
+    },
+    "labels": {
+      "description": "Utilitarian mono for nav, CTAs, tags.",
+      "variants": [
+        {
+          "name": "DM Mono",
+          "role": "Nav & CTA",
+          "specs": { "size": "12px", "line_height": "1.2", "font_weight": "400", "font_variation_settings": "" },
+          "technical": { "font_family_css": "\"DM Mono\", monospace" },
+          "notes": "agustindorego.com DM Mono labels scaled up from 8px for accessibility"
+        },
+        {
+          "name": "DM Mono",
+          "role": "Tag / Date",
+          "specs": { "size": "11px", "line_height": "1.2", "font_weight": "400", "font_variation_settings": "" },
+          "technical": { "font_family_css": "\"DM Mono\", monospace" },
+          "notes": "maraoz writing dates + Agustín mono kickers"
+        }
+      ]
+    },
+    "others": { "description": "", "variants": [] },
+    "highlights": "H1 weight contrast (200 vs 600) from agustindorego.com. No em dashes in copy.",
+    "insights": [
+      "Inter + DM Mono pair from agustindorego.com is the master type stack.",
+      "Mono labels are uppercase with letter-spacing 0.08em for CTA and nav."
+    ]
+  },
+  "surfaces": {
+    "notes": "Flat cream page; project cards use Card Cream #FFFBF5 with 1px #D5CFC4 border and 12px radius (softer than Agustín 20px bento to fit long-form)."
+  },
+  "elevation": {
+    "notes": "No heavy shadows; optional soft card shadow 0 1px 2px rgba(28,24,20,0.06)."
+  },
+  "interactions": {
+    "easing": "cubic-bezier(0.25, 0.1, 0.25, 1), default CSS ease",
+    "durations": { "links_buttons": "150ms", "reveals": "0ms" },
+    "animations": [],
+    "reduced_motion": "No entrance choreography; honor prefers-reduced-motion by keeping transitions at 0."
+  },
+  "actions": {
+    "button_list": [
+      {
+        "name": "Primary CTA",
+        "usage": "Book a meeting",
+        "specs": {
+          "radius": "8px",
+          "sizes": [
+            { "name": "Default", "font": "DM Mono", "size": "12px", "padding": "12px 20px" }
+          ]
+        },
+        "visuals": {
+          "default": { "background": "#E85D04", "text_color": "#FFFBF5" },
+          "hover": { "background": "#C44D03", "text_color": "#FFFBF5" },
+          "focus": { "outline": "2px solid #E85D04; outline-offset: 2px" },
+          "active": { "background": "#C44D03", "text_color": "#FFFBF5" },
+          "disabled": { "background": "#E85D04", "text_color": "#FFFBF5" }
+        },
+        "notes": "Anatomy from agustindorego.com primary CTA; fill color overridden to Signal Orange."
+      },
+      {
+        "name": "Secondary text CTA",
+        "usage": "See my work",
+        "specs": {
+          "radius": "0",
+          "sizes": [{ "name": "Default", "font": "DM Mono", "size": "12px", "padding": "12px 0" }]
+        },
+        "visuals": {
+          "default": { "background": "transparent", "text_color": "#1C1814" },
+          "hover": { "background": "transparent", "text_color": "#E85D04" },
+          "focus": { "outline": "2px solid #E85D04; outline-offset: 2px" },
+          "active": { "background": "transparent", "text_color": "#E85D04" },
+          "disabled": { "background": "transparent", "text_color": "#8C867C" }
+        },
+        "notes": "Underline on hover; maraoz link behavior with orange accent."
+      }
+    ],
+    "links": { "text_decoration": "none; underline on hover with offset 3px (maraoz.com)" }
+  },
+  "navigation": {
+    "top_nav": {
+      "description": "Sticky-feeling top row: name left, anchor links center-right, Book a meeting as solid CTA far right on desktop. Dot separators between anchors from maraoz.com.",
+      "notes": "maraoz.com horizontal nav rhythm + Agustín mono labels."
+    },
+    "announcement_bar": null,
+    "tabs": null
+  },
+  "data_display": {
+    "notes": "Project cards: title, one-liner, tag mono, optional OG image. Writing: date mono uppercase, title link. Investments: name link + one line."
+  },
+  "structure": {
+    "dividers": [
+      {
+        "name": "Section Rule",
+        "color": "#D5CFC4",
+        "height": "1px",
+        "style": "solid",
+        "notes": "maraoz.com #DCDCDC adapted to parchment"
+      }
+    ]
+  },
+  "icons": {
+    "notes": "Text labels for socials in footer (X, LinkedIn, Email) like Agustín footer links; no icon font required."
+  },
+  "assets": {
+    "logos": [],
+    "media": [
+      {
+        "url": "https://www.wakeuplabs.io/images/og-default.png",
+        "origin_url": "https://www.wakeuplabs.io",
+        "usage": "WakeUp Labs project card OG"
+      },
+      {
+        "url": "https://hyve.com.ar/media/og-hyve.jpg",
+        "origin_url": "https://hyve.com.ar/",
+        "usage": "HYVE investment card OG"
+      },
+      {
+        "url": "https://www.gringo.estate/images/gringoestate-og-image.jpg",
+        "origin_url": "https://www.gringo.estate/",
+        "usage": "GringoEstate investment card OG"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "Navigation",
+      "layout_pattern": "Horizontal space-between",
+      "composition": "Name left-aligned; links + CTA right. source: maraoz.com nav + agustindorego.com mono labels",
+      "skeleton": "header > nav > a.name | ul.links > li > a | a.cta"
+    },
+    {
+      "type": "Hero",
+      "layout_pattern": "Left-aligned two-column on desktop (copy + placeholder headshot)",
+      "composition": "Left: H1 (Gonzalo light / Silman 600), one-liner, two CTAs. Right: initials circle. source: agustindorego.com hero type; headshot placeholder is local decision.",
+      "skeleton": "section#top > div.copy > h1 + p + div.ctas | div.headshot"
+    },
+    {
+      "type": "About",
+      "layout_pattern": "Single column prose + bullets",
+      "composition": "H2 About, paragraphs, What I'm looking for now, bullet list. source: tieshunroquerre.com About anatomy",
+      "skeleton": "section#about > h2 + p* + h3 + ul"
+    },
+    {
+      "type": "Projects",
+      "layout_pattern": "Stacked project cards",
+      "composition": "H2 Projects, cards with title, subtitle, body, tag, optional image/link. source: tieshun list rhythm + Agustín card cream",
+      "skeleton": "section#projects > h2 + article.project*"
+    },
+    {
+      "type": "Investments",
+      "layout_pattern": "Stacked investment rows with optional OG",
+      "composition": "H2 Investments & Advisory, linked names, one-liners. source: tieshunroquerre.com Investments",
+      "skeleton": "section#investments > h2 + article*"
+    },
+    {
+      "type": "Writing",
+      "layout_pattern": "Date + title list",
+      "composition": "H2 Writing, rows DATE · Title link. source: maraoz.com Writings list",
+      "skeleton": "section#writing > h2 + ul > li > time + a"
+    },
+    {
+      "type": "Footer",
+      "layout_pattern": "Editorial horizontal",
+      "composition": "Name · locations; social text links; Book a meeting. source: maraoz.com footer + agustindorego.com social row",
+      "skeleton": "footer#footer > p.identity + ul.links"
+    }
+  ]
+}
