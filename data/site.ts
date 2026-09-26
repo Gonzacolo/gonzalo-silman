@@ -30,9 +30,9 @@ export const brands = {
 
 export const about = {
   lookingFor:
-    "Wrapping up my exploration period in San Francisco after gathering energy to build something huge: helping a friend, joining an amazing team, or building something new on my own. Hacking growth mechanisms with the intention of experiencing hypergrowth firsthand.",
+    "Wrapping up my exploration period in San Francisco. Ready to build something huge with friends, joining an amazing team or on my own. Exploring growth hacking mechanisms.",
   bullets: [
-    "Guest Faculty at UTDT for the New Business Development capstone",
+    "UTDT professor for the New Business Development class",
     "Languages: Spanish, English, German, Portuguese",
   ],
 } as const;
