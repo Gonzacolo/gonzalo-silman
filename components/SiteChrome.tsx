@@ -32,9 +32,11 @@ export function SiteHeader({
       >
         <Link
           href={variant === "home" ? "#about" : "/"}
-          className="shrink-0 font-mono text-[12px] uppercase tracking-[0.08em] text-fg"
+          className="group shrink-0 font-mono text-[12px] uppercase tracking-[0.08em] text-fg transition-[color,letter-spacing] duration-200 hover:tracking-[0.14em] hover:text-accent"
         >
-          {site.name}
+          <span className="inline-block border-b border-transparent transition-colors duration-200 group-hover:border-accent">
+            {site.name}
+          </span>
         </Link>
         {variant === "home" ? (
           <ul className="flex flex-wrap items-center gap-x-1 gap-y-1 sm:justify-end">
@@ -75,7 +77,14 @@ export function SiteFooter() {
     >
       <div className="mx-auto flex max-w-[880px] flex-col gap-6 px-5 py-10 sm:flex-row sm:items-end sm:justify-between sm:px-10">
         <div>
-          <p className="text-[14px] font-semibold text-fg">{site.name}</p>
+          <Link
+            href="/"
+            className="group inline-block text-[14px] font-semibold text-fg transition-colors duration-200 hover:text-accent"
+          >
+            <span className="border-b border-transparent transition-colors duration-200 group-hover:border-accent">
+              {site.name}
+            </span>
+          </Link>
           <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.08em] text-muted">
             {site.location}
           </p>
