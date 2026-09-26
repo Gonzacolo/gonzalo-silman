@@ -31,14 +31,16 @@ export default function Home() {
               <ExtLink href={brands.utdt} className="prose-link">
                 Universidad Torcuato Di Tella
               </ExtLink>{" "}
-              to study Argentina and understand why it keeps breaking.
+              to understand the mistakes Argentina made in economic policy.
             </p>
             <p>
-              For almost five years I built{" "}
+              I built{" "}
               <ExtLink href={brands.wakeup} className="prose-link">
                 WakeUp Labs
-              </ExtLink>{" "}
-              as a founder: 30+ people hired, and clients like{" "}
+              </ExtLink>
+              , a software development company that helped startups and
+              fintechs. We ran 25+ people at once, and worked with clients
+              around the world like{" "}
               <ExtLink href={brands.coinbase} className="prose-link">
                 Coinbase
               </ExtLink>
@@ -50,13 +52,7 @@ export default function Home() {
               <ExtLink href={brands.cocaCola} className="prose-link">
                 The Coca-Cola Company
               </ExtLink>
-              . I led the commercial motion end to end, from first call to
-              delivery.
-            </p>
-            <p>
-              What I&apos;m good at: taking complex problems, making them
-              simple, and validating ideas with the least effort possible. Give
-              me the hardest task and I&apos;ll take it from zero to something.
+              .
             </p>
           </div>
           <h3 className="mt-10 font-mono text-[12px] uppercase tracking-[0.08em] text-muted">

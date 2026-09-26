@@ -30,7 +30,7 @@ export const brands = {
 
 export const about = {
   lookingFor:
-    "Wrapping up exploring the San Francisco startup world. Next up: joining or building something bigger, ideally focused on B2B and B2B sales, and experiencing hypergrowth firsthand.",
+    "Wrapping up my exploration period in San Francisco after gathering energy to build something huge: helping a friend, joining an amazing team, or building something new on my own. Hacking growth mechanisms with the intention of experiencing hypergrowth firsthand.",
   bullets: [
     "Guest Faculty at UTDT for the New Business Development capstone",
     "Languages: Spanish, English, German, Portuguese",
@@ -61,7 +61,7 @@ export const projects: readonly Project[] = [
     slug: "wakeup-labs",
     name: "WakeUp Labs",
     subtitle: "Founder",
-    body: "Software studio building production systems for crypto and fintech. Grew it to 30+ people, selling to the US, Europe and Israel. Still a shareholder.",
+    body: "Software studio building production systems for crypto and fintech. Grew it to 25+ people, selling to the US, Europe and Israel. Still a shareholder.",
     tag: "Founder · 2022-2026",
     href: "https://www.wakeuplabs.io",
     image: "https://www.wakeuplabs.io/images/og-default.png",
@@ -101,13 +101,13 @@ export const investments: readonly Investment[] = [
     name: "Beato",
     body: "Pizzeria in Córdoba, Argentina.",
     href: "https://www.instagram.com/beato_cba/",
-    image: null,
+    image: "/images/beato.jpg",
   },
   {
     name: "GringoEstate",
     body: "Real estate without the tie. Sales, short-term rentals and advisory in Buenos Aires.",
     href: "https://www.gringo.estate/",
-    image: "https://www.gringo.estate/images/gringoestate-og-image.jpg",
+    image: "/images/gringoestate.jpg",
   },
 ];
 
