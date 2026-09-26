@@ -5,8 +5,8 @@
     "page_type_category": "Core Marketing",
     "page_type": "Homepage",
     "industry": "Personal Brand / Founder",
-    "primary_purpose": "Introduce Gonzalo Silman and convert visitors to a meeting or project review",
-    "main_cta": "Book a meeting",
+    "primary_purpose": "Introduce Gonzalo Silman and surface featured work",
+    "main_cta": "See more",
     "copy_tone": ["Direct", "Matter-of-fact", "Understated"],
     "brand_signature": "Warm cream editorial page with expressive Inter weight contrast and a single orange accent. Minimal chrome, left-aligned content column, Maraoz-style nav and writing list, Tieshun-style section rhythm.",
     "visual_language": {
@@ -181,7 +181,7 @@
     "button_list": [
       {
         "name": "Primary CTA",
-        "usage": "Book a meeting",
+        "usage": "See more to /projects",
         "specs": {
           "radius": "8px",
           "sizes": [
@@ -218,7 +218,7 @@
   },
   "navigation": {
     "top_nav": {
-      "description": "Sticky-feeling top row: name left, anchor links center-right, Book a meeting as solid CTA far right on desktop. Dot separators between anchors from maraoz.com.",
+      "description": "Sticky top row: name left, anchor links right. Dot separators between anchors from maraoz.com. No meeting CTA.",
       "notes": "maraoz.com horizontal nav rhythm + Agustín mono labels."
     },
     "announcement_bar": null,
@@ -265,26 +265,26 @@
     {
       "type": "Navigation",
       "layout_pattern": "Horizontal space-between",
-      "composition": "Name left-aligned; links + CTA right. source: maraoz.com nav + agustindorego.com mono labels",
-      "skeleton": "header > nav > a.name | ul.links > li > a | a.cta"
-    },
-    {
-      "type": "Hero",
-      "layout_pattern": "Left-aligned two-column on desktop (copy + placeholder headshot)",
-      "composition": "Left: H1 (Gonzalo light / Silman 600), one-liner, two CTAs. Right: initials circle. source: agustindorego.com hero type; headshot placeholder is local decision.",
-      "skeleton": "section#top > div.copy > h1 + p + div.ctas | div.headshot"
+      "composition": "Name left-aligned; anchor links right. No Book a meeting CTA. source: maraoz.com nav + agustindorego.com mono labels",
+      "skeleton": "header > nav > a.name | ul.links > li > a"
     },
     {
       "type": "About",
       "layout_pattern": "Single column prose + bullets",
-      "composition": "H2 About, paragraphs, What I'm looking for now, bullet list. source: tieshunroquerre.com About anatomy",
+      "composition": "Page opens at About (no hero). H2 About, paragraphs, What I'm looking for now, bullet list. source: tieshunroquerre.com About anatomy",
       "skeleton": "section#about > h2 + p* + h3 + ul"
     },
     {
-      "type": "Projects",
-      "layout_pattern": "Stacked project cards",
-      "composition": "H2 Projects, cards with title, subtitle, body, tag, optional image/link. source: tieshun list rhythm + Agustín card cream",
-      "skeleton": "section#projects > h2 + article.project*"
+      "type": "Featured Projects",
+      "layout_pattern": "Two-column card grid on desktop, stack on mobile",
+      "composition": "H2 Featured Projects; Biodec + WakeUp only; See more button to /projects. source: agustindorego.com portfolio CTA pattern",
+      "skeleton": "section#projects > h2 + div.grid > article*2 + a.see-more"
+    },
+    {
+      "type": "Projects Archive",
+      "layout_pattern": "Stacked full list on /projects",
+      "composition": "Selected Work title, one-liner, all projects, Back to home. source: agustindorego.com/portfolio",
+      "skeleton": "main > h1 + p + article.project* + a.back"
     },
     {
       "type": "Investments",
@@ -301,7 +301,7 @@
     {
       "type": "Footer",
       "layout_pattern": "Editorial horizontal",
-      "composition": "Name · locations; social text links; Book a meeting. source: maraoz.com footer + agustindorego.com social row",
+      "composition": "Name · locations; X, LinkedIn, Instagram, TikTok, Email. source: maraoz.com footer + agustindorego.com social row",
       "skeleton": "footer#footer > p.identity + ul.links"
     }
   ]

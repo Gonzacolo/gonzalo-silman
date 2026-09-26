@@ -5,14 +5,15 @@ export const site = {
     "Economist turned founder. I build the roles I want when they don't exist yet.",
   location: "Buenos Aires / San Francisco",
   email: "gonzalosilman@gmail.com",
-  meeting: "https://zcal.co/gonzalo-silman/",
   social: {
     x: "https://x.com/0xGonzacolo",
     linkedin: "https://www.linkedin.com/in/gonzalosilman",
+    instagram: "https://www.instagram.com/gonzalosilman/",
+    tiktok: "https://www.tiktok.com/@gonzalosilman",
   },
 } as const;
 
-export const nav = [
+export const homeNav = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#investments", label: "Investments" },
@@ -33,16 +34,28 @@ export const about = {
   ],
 } as const;
 
-export const projects = [
+export type Project = {
+  slug: string;
+  name: string;
+  subtitle: string;
+  body: string;
+  tag: string;
+  href: string | null;
+  image: string | null;
+};
+
+export const projects: readonly Project[] = [
   {
+    slug: "biodec",
     name: "Biodec SRL",
     subtitle: "AI-ready ERP for a medical supplies company",
     body: "Replaced a 20+ year old legacy system at a ~60-person medical device importer. Rolled out slice by slice (stock, then purchase orders). Now processes ~40-45% of company revenue, built with a two-person team and AI coding tools. Leadership queries the database in plain language.",
     tag: "Operator / Builder · 2025-2026",
-    href: null as string | null,
-    image: null as string | null,
+    href: null,
+    image: null,
   },
   {
+    slug: "wakeup-labs",
     name: "WakeUp Labs",
     subtitle: "Co-Founder & COO",
     body: "Software studio building production systems for crypto and fintech. Grew it to 30+ people and $4M+ all-time revenue, selling to the US, Europe and Israel. Still a shareholder.",
@@ -51,14 +64,21 @@ export const projects = [
     image: "https://www.wakeuplabs.io/images/og-default.png",
   },
   {
+    slug: "coinflip",
     name: "Coinflip",
     subtitle: "An on-chain coin flip",
     body: "Pick Bitcoin or Ether, flip, settle on-chain. Verifiable randomness via Chainlink VRF on Arbitrum. Currently in testnet.",
     tag: "Side project · 2026",
     href: "https://www.coinflipgame.xyz",
-    image: null as string | null,
+    image: null,
   },
 ] as const;
+
+export const featuredProjectSlugs = ["biodec", "wakeup-labs"] as const;
+
+export const featuredProjects = featuredProjectSlugs.map(
+  (slug) => projects.find((p) => p.slug === slug)!,
+);
 
 export const investments = [
   {
@@ -96,4 +116,12 @@ export const writing = [
     source: "X",
     href: "https://x.com/0xGonzacolo/status/1507902381165588481",
   },
+] as const;
+
+export const footerLinks = [
+  { href: site.social.x, label: "X" },
+  { href: site.social.linkedin, label: "LinkedIn" },
+  { href: site.social.instagram, label: "Instagram" },
+  { href: site.social.tiktok, label: "TikTok" },
+  { href: `mailto:${site.email}`, label: "Email" },
 ] as const;
