@@ -20,14 +20,17 @@ export const homeNav = [
   { href: "#writing", label: "Writing" },
 ] as const;
 
+export const brands = {
+  utdt: "https://www.utdt.edu/",
+  wakeup: "https://www.wakeuplabs.io/",
+  coinbase: "https://www.coinbase.com/",
+  arbitrum: "https://arbitrum.io/",
+  cocaCola: "https://www.coca-cola.com/",
+} as const;
+
 export const about = {
-  paragraphs: [
-    "I studied economics at Universidad Torcuato Di Tella to understand why Argentina keeps breaking. Tech wasn't hiring economists with no experience, so I co-founded one.",
-    "For almost five years I ran WakeUp Labs as Co-Founder & COO: 30+ people hired, $4M+ in all-time revenue, deals over $200k, and clients like Coinbase, Arbitrum and The Coca-Cola Company. I led the commercial motion end to end, from first call to delivery.",
-    "What I'm good at: taking complex problems, making them simple, and validating ideas with the least effort possible. Give me the hardest task and I'll take it from zero to something.",
-  ],
   lookingFor:
-    "Wrapping up my exploration chapter in San Francisco, meeting founders until October 10. Next up: joining or building something bigger, selling B2B or B2C, and living hypergrowth firsthand.",
+    "Wrapping up exploring the San Francisco startup world. Next up: joining or building something bigger, ideally focused on B2B and B2B sales, and experiencing hypergrowth firsthand.",
   bullets: [
     "Guest Faculty at UTDT for the New Business Development capstone",
     "Languages: Spanish, English, German, Portuguese",
@@ -57,9 +60,9 @@ export const projects: readonly Project[] = [
   {
     slug: "wakeup-labs",
     name: "WakeUp Labs",
-    subtitle: "Co-Founder & COO",
-    body: "Software studio building production systems for crypto and fintech. Grew it to 30+ people and $4M+ all-time revenue, selling to the US, Europe and Israel. Still a shareholder.",
-    tag: "Co-Founder · 2022-2026",
+    subtitle: "Founder",
+    body: "Software studio building production systems for crypto and fintech. Grew it to 30+ people, selling to the US, Europe and Israel. Still a shareholder.",
+    tag: "Founder · 2022-2026",
     href: "https://www.wakeuplabs.io",
     image: "https://www.wakeuplabs.io/images/og-default.png",
   },
@@ -80,7 +83,14 @@ export const featuredProjects = featuredProjectSlugs.map(
   (slug) => projects.find((p) => p.slug === slug)!,
 );
 
-export const investments = [
+export type Investment = {
+  name: string;
+  body: string;
+  href: string;
+  image: string | null;
+};
+
+export const investments: readonly Investment[] = [
   {
     name: "HYVE",
     body: "HYROX and hybrid training club in Buenos Aires (Recoleta and Núñez).",
@@ -91,7 +101,7 @@ export const investments = [
     name: "Beato",
     body: "Pizzeria in Córdoba, Argentina.",
     href: "https://www.instagram.com/beato_cba/",
-    image: null as string | null,
+    image: null,
   },
   {
     name: "GringoEstate",
@@ -99,7 +109,7 @@ export const investments = [
     href: "https://www.gringo.estate/",
     image: "https://www.gringo.estate/images/gringoestate-og-image.jpg",
   },
-] as const;
+];
 
 export const writing = [
   {

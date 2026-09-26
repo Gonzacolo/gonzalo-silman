@@ -4,6 +4,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { ExtLink, SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import {
   about,
+  brands,
   featuredProjects,
   investments,
   writing,
@@ -11,38 +12,71 @@ import {
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col">
+    <div className="flex min-w-0 flex-1 flex-col">
       <SiteHeader variant="home" />
 
-      <main className="mx-auto w-full max-w-[880px] flex-1 px-6 sm:px-10">
-        <section id="about" className="scroll-mt-24 py-12 sm:py-16">
+      <main className="mx-auto w-full min-w-0 max-w-[880px] flex-1 px-5 sm:px-10">
+        <section id="about" className="scroll-mt-24 py-10 sm:py-16">
           <h1 className="sr-only">Gonzalo Silman</h1>
-          <h2 className="text-[24px] font-medium leading-[1.2] tracking-tight text-fg">
+          <h2 className="text-[22px] font-medium leading-[1.2] tracking-tight text-fg sm:text-[24px]">
             About
           </h2>
-          <div className="mt-6 space-y-4 text-[17px] leading-[1.55] text-fg">
-            {about.paragraphs.map((p) => (
-              <p key={p.slice(0, 32)}>{p}</p>
-            ))}
+          <div className="mt-6 space-y-4 text-[16px] leading-[1.55] text-fg sm:text-[17px]">
+            <p>
+              I&apos;m a simple guy who likes ambitious challenges and wants to
+              have fun while doing hard things.
+            </p>
+            <p>
+              I studied economics at{" "}
+              <ExtLink href={brands.utdt} className="prose-link">
+                Universidad Torcuato Di Tella
+              </ExtLink>{" "}
+              to study Argentina and understand why it keeps breaking.
+            </p>
+            <p>
+              For almost five years I built{" "}
+              <ExtLink href={brands.wakeup} className="prose-link">
+                WakeUp Labs
+              </ExtLink>{" "}
+              as a founder: 30+ people hired, and clients like{" "}
+              <ExtLink href={brands.coinbase} className="prose-link">
+                Coinbase
+              </ExtLink>
+              ,{" "}
+              <ExtLink href={brands.arbitrum} className="prose-link">
+                Arbitrum
+              </ExtLink>{" "}
+              and{" "}
+              <ExtLink href={brands.cocaCola} className="prose-link">
+                The Coca-Cola Company
+              </ExtLink>
+              . I led the commercial motion end to end, from first call to
+              delivery.
+            </p>
+            <p>
+              What I&apos;m good at: taking complex problems, making them
+              simple, and validating ideas with the least effort possible. Give
+              me the hardest task and I&apos;ll take it from zero to something.
+            </p>
           </div>
           <h3 className="mt-10 font-mono text-[12px] uppercase tracking-[0.08em] text-muted">
             What I&apos;m looking for now
           </h3>
-          <p className="mt-3 text-[17px] leading-[1.55] text-fg">
+          <p className="mt-3 text-[16px] leading-[1.55] text-fg sm:text-[17px]">
             {about.lookingFor}
           </p>
-          <ul className="mt-6 list-disc space-y-2 pl-5 text-[17px] leading-[1.55] text-fg">
+          <ul className="mt-6 list-disc space-y-2 pl-5 text-[16px] leading-[1.55] text-fg sm:text-[17px]">
             {about.bullets.map((b) => (
               <li key={b}>{b}</li>
             ))}
           </ul>
         </section>
 
-        <section id="projects" className="scroll-mt-24 py-12 sm:py-16">
-          <h2 className="text-[24px] font-medium leading-[1.2] tracking-tight text-fg">
+        <section id="projects" className="scroll-mt-24 py-10 sm:py-16">
+          <h2 className="text-[22px] font-medium leading-[1.2] tracking-tight text-fg sm:text-[24px]">
             Featured Projects
           </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+          <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {featuredProjects.map((project) => (
               <ProjectCard key={project.slug} project={project} compact />
             ))}
@@ -57,27 +91,30 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="investments" className="scroll-mt-24 py-12 sm:py-16">
-          <h2 className="text-[24px] font-medium leading-[1.2] tracking-tight text-fg">
+        <section id="investments" className="scroll-mt-24 py-10 sm:py-16">
+          <h2 className="text-[22px] font-medium leading-[1.2] tracking-tight text-fg sm:text-[24px]">
             Investments &amp; Advisory
           </h2>
           <div className="mt-8 space-y-6">
             {investments.map((item) => (
               <article
                 key={item.name}
-                className="flex flex-col gap-4 overflow-hidden rounded-xl border border-rule bg-surface shadow-[0_1px_2px_rgba(28,24,20,0.06)] sm:flex-row sm:items-stretch"
+                className="flex flex-col overflow-hidden rounded-xl border border-rule bg-surface shadow-[0_1px_2px_rgba(28,24,20,0.06)] sm:flex-row sm:items-stretch"
               >
-                {item.image ? (
-                  <div className="relative aspect-[16/10] w-full shrink-0 border-b border-rule bg-parchment sm:aspect-auto sm:w-44 sm:border-b-0 sm:border-r">
+                <div
+                  className="relative aspect-[16/10] w-full shrink-0 border-b border-rule bg-parchment sm:aspect-auto sm:w-44 sm:min-h-[7.5rem] sm:border-b-0 sm:border-r"
+                  aria-hidden={!item.image}
+                >
+                  {item.image ? (
                     <Image
                       src={item.image}
                       alt=""
                       fill
                       className="object-cover"
-                      sizes="176px"
+                      sizes="(max-width: 640px) 100vw, 176px"
                     />
-                  </div>
-                ) : null}
+                  ) : null}
+                </div>
                 <div className="flex flex-1 flex-col justify-center p-5 sm:p-6">
                   <ExtLink
                     href={item.href}
@@ -96,9 +133,9 @@ export default function Home() {
 
         <section
           id="writing"
-          className="scroll-mt-24 border-t border-rule py-12 sm:py-16"
+          className="scroll-mt-24 border-t border-rule py-10 sm:py-16"
         >
-          <h2 className="text-[24px] font-medium leading-[1.2] tracking-tight text-fg">
+          <h2 className="text-[22px] font-medium leading-[1.2] tracking-tight text-fg sm:text-[24px]">
             Writing
           </h2>
           <ul className="mt-8 divide-y divide-rule">

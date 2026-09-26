@@ -11,22 +11,29 @@ export function ProjectCard({
 }) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-xl border border-rule bg-surface shadow-[0_1px_2px_rgba(28,24,20,0.06)]">
-      {project.image ? (
-        <div
-          className={`relative w-full border-b border-rule bg-parchment ${
-            compact ? "aspect-[16/10]" : "aspect-[2/1]"
-          }`}
-        >
+      <div
+        className={`relative w-full shrink-0 border-b border-rule bg-parchment ${
+          compact ? "aspect-[16/10]" : "aspect-[2/1]"
+        }`}
+        aria-hidden={!project.image}
+      >
+        {project.image ? (
           <Image
             src={project.image}
             alt=""
             fill
             className="object-cover"
-            sizes={compact ? "(max-width: 640px) 100vw, 420px" : "(max-width: 880px) 100vw, 880px"}
+            sizes={
+              compact
+                ? "(max-width: 640px) 100vw, 420px"
+                : "(max-width: 880px) 100vw, 880px"
+            }
           />
-        </div>
-      ) : null}
-      <div className={`flex flex-1 flex-col ${compact ? "p-4 sm:p-5" : "p-5 sm:p-6"}`}>
+        ) : null}
+      </div>
+      <div
+        className={`flex flex-1 flex-col ${compact ? "p-4 sm:p-5" : "p-5 sm:p-6"}`}
+      >
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           {project.href ? (
             <ExtLink
@@ -42,7 +49,9 @@ export function ProjectCard({
             {project.tag}
           </span>
         </div>
-        <p className="mt-1 text-[15px] font-medium text-muted">{project.subtitle}</p>
+        <p className="mt-1 text-[15px] font-medium text-muted">
+          {project.subtitle}
+        </p>
         <p
           className={`mt-3 text-[16px] leading-[1.55] text-fg ${
             compact ? "line-clamp-5" : ""
