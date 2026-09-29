@@ -32,12 +32,7 @@ export const brands = {
 } as const;
 
 export const about = {
-  lookingFor:
-    "Wrapping up my exploration period in San Francisco. Ready to build something huge with friends, joining an amazing team or on my own. Exploring growth hacking mechanisms.",
-  bullets: [
-    "UTDT professor for the New Business Development class",
-    "Languages: Spanish, English, German, Portuguese",
-  ],
+  bullets: ["Languages: Spanish, English, German, Portuguese"],
 } as const;
 
 export type Project = {
@@ -65,7 +60,7 @@ export const projects: readonly Project[] = [
   {
     slug: "wakeup-labs",
     name: "WakeUp Labs",
-    subtitle: "Founder",
+    subtitle: "Software studio for crypto and fintech, grown to 25+ people",
     body: "Software studio building production systems for crypto and fintech. Grew it to 25+ people, selling to the US, Europe and Israel. Still a shareholder.",
     tag: "Founder · 2022-2026",
     href: "https://www.wakeuplabs.io",

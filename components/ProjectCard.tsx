@@ -56,13 +56,11 @@ export function ProjectCard({
         <p className="mt-1 text-[15px] font-medium text-muted">
           {project.subtitle}
         </p>
-        <p
-          className={`mt-3 text-[16px] leading-[1.55] text-fg ${
-            compact ? "line-clamp-5" : ""
-          }`}
-        >
-          {project.body}
-        </p>
+        {!compact ? (
+          <p className="mt-3 text-[16px] leading-[1.55] text-fg">
+            {project.body}
+          </p>
+        ) : null}
       </div>
     </article>
   );

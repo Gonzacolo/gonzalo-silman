@@ -56,15 +56,14 @@ export default function Home() {
               <ExtLink href={brands.cocaCola} className="prose-link">
                 The Coca-Cola Company
               </ExtLink>
-              .
+              . I still help companies as an advisor and early investor, and I
+              teach the New Business Development class at{" "}
+              <ExtLink href={brands.utdt} className="prose-link">
+                Universidad Torcuato Di Tella
+              </ExtLink>
+              , where I graduated.
             </p>
           </div>
-          <h3 className="mt-10 font-mono text-[12px] uppercase tracking-[0.08em] text-muted">
-            What I&apos;m looking for now
-          </h3>
-          <p className="mt-3 text-[16px] leading-[1.55] text-fg sm:text-[17px]">
-            {about.lookingFor}
-          </p>
           <ul className="mt-6 list-disc space-y-2 pl-5 text-[16px] leading-[1.55] text-fg sm:text-[17px]">
             {about.bullets.map((b) => (
               <li key={b}>{b}</li>
