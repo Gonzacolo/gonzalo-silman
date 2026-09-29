@@ -22,7 +22,11 @@ export function ProjectCard({
             src={project.image}
             alt=""
             fill
-            className="object-cover"
+            className={
+              project.imageFit === "contain"
+                ? "object-contain p-6 sm:p-8"
+                : "object-cover"
+            }
             sizes={
               compact
                 ? "(max-width: 640px) 100vw, 420px"

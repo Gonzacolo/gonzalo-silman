@@ -164,26 +164,23 @@ export default function Home() {
           <h2 className="text-[22px] font-medium leading-[1.2] tracking-tight text-fg sm:text-[24px]">
             Mentions, interviews &amp; talks
           </h2>
-          <ul className="mt-8 divide-y divide-rule">
-            {mentions.map((item) => (
-              <li key={item.href} className="py-5 first:pt-0 last:pb-0">
-                <span className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted">
-                  {item.source}
-                </span>
-                <div className="mt-1">
-                  <ExtLink
-                    href={item.href}
-                    className="text-[17px] font-medium text-fg underline-offset-[3px] hover:text-accent hover:underline"
-                  >
-                    {item.title}
-                  </ExtLink>
-                </div>
-                <p className="mt-2 text-[15px] leading-[1.5] text-muted">
-                  {item.blurb}
-                </p>
-              </li>
+          <p className="mt-6 flex flex-wrap items-baseline gap-x-1.5 gap-y-1 text-[14px] leading-[1.55] text-muted sm:text-[15px]">
+            {mentions.map((item, i) => (
+              <span key={item.href} className="inline-flex items-baseline gap-x-1.5">
+                {i > 0 ? (
+                  <span className="text-muted" aria-hidden>
+                    ·
+                  </span>
+                ) : null}
+                <ExtLink
+                  href={item.href}
+                  className="text-muted underline-offset-[3px] transition-colors duration-150 hover:text-accent hover:underline"
+                >
+                  {item.title}
+                </ExtLink>
+              </span>
             ))}
-          </ul>
+          </p>
         </section>
       </main>
 

@@ -46,6 +46,7 @@ export type Project = {
   tag: string;
   href: string | null;
   image: string | null;
+  imageFit?: "cover" | "contain";
 };
 
 export const projects: readonly Project[] = [
@@ -55,8 +56,9 @@ export const projects: readonly Project[] = [
     subtitle: "AI-ready ERP for a medical supplies company",
     body: "Replaced a 20+ year old legacy system at a ~60-person medical device importer. Rolled out slice by slice (stock, then purchase orders). Now processes ~40-45% of company revenue, built with a two-person team and AI coding tools. Leadership queries the database in plain language.",
     tag: "Operator / Builder · 2025-2026",
-    href: null,
-    image: null,
+    href: "https://www.biodec.com.ar/",
+    image: "/images/biodec.png",
+    imageFit: "contain",
   },
   {
     slug: "wakeup-labs",
