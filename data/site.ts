@@ -18,6 +18,7 @@ export const homeNav = [
   { href: "#projects", label: "Projects" },
   { href: "#investments", label: "Investments" },
   { href: "#writing", label: "Writing" },
+  { href: "#mentions", label: "Mentions" },
 ] as const;
 
 export const brands = {
@@ -67,13 +68,22 @@ export const projects: readonly Project[] = [
     image: "https://www.wakeuplabs.io/images/og-default.png",
   },
   {
+    slug: "predict-it",
+    name: "Predict It!",
+    subtitle: "ETHGlobal Cannes 2026 hackathon winner",
+    body: "Won Best Prediction Market Built on Arc Network (Circle) at ETHGlobal Cannes. Built solo in 48 hours: a Messi penalty prediction game with on-chain escrow and USDC settlement on Arc. Frontend, smart contracts, product, and pitch.",
+    tag: "Hackathon · 2026",
+    href: "https://predict-it-one.vercel.app/",
+    image: "/images/predict-it.png",
+  },
+  {
     slug: "coinflip",
     name: "Coinflip",
     subtitle: "An on-chain coin flip",
-    body: "Pick Bitcoin or Ether, flip, settle on-chain. Verifiable randomness via Chainlink VRF on Arbitrum. Currently in testnet.",
+    body: "An on-chain coin flip. Pick Bitcoin or Ether, flip, settle on-chain with verifiable randomness (Chainlink VRF on Arbitrum). Live at coinflipgame.xyz.",
     tag: "Side project · 2026",
     href: "https://www.coinflipgame.xyz",
-    image: null,
+    image: "/images/coinflip.png",
   },
 ] as const;
 
@@ -125,6 +135,64 @@ export const writing = [
       "My first article: where the NFT market stood in 2022 and which use cases would move it forward.",
     source: "X",
     href: "https://x.com/0xGonzacolo/status/1507902381165588481",
+  },
+] as const;
+
+export const mentions = [
+  {
+    source: "TN Tecno",
+    title:
+      "Criptomonedas y testamentos: cómo se heredan los bienes digitales",
+    blurb: "Quoted on crypto inheritance, cold wallets, and MultiSig best practices.",
+    href: "https://tn.com.ar/tecno/novedades/2022/06/19/criptomonedas-y-testamentos-como-se-heredan-los-bienes-digitales/",
+  },
+  {
+    source: "TN Tecno",
+    title: "Play-to-earn: videojuegos que recompensan con criptoactivos",
+    blurb: "Interviewed on play-to-earn, gaming, and crypto incentives.",
+    href: "https://tn.com.ar/tecno/juegos/2021/08/27/todo-sobre-la-movida-play-to-earn-los-videojuegos-que-recompensan-al-usuario-con-criptoactivos/",
+  },
+  {
+    source: "Politólogos al Whisky",
+    title: "La adopción de Bitcoin en El Salvador",
+    blurb: "Acknowledged for feedback on Bitcoin legal tender in El Salvador.",
+    href: "https://politologosalwhisky.com/2021/10/14/la-adopcion-de-bitcoin-en-el-salvador-el-dia-en-que-bitcoin-paso-de-puro-verso-a-cancion-de-masas/",
+  },
+  {
+    source: "SEED Latam",
+    title: "DAO Stack Essentials: Where Tooling Is Needed Most?",
+    blurb: "Panel talk on DAO tooling and where builders need better stack support.",
+    href: "https://www.youtube.com/watch?v=67acXiQyowE",
+  },
+  {
+    source: "Solow",
+    title: "NFTs, POAP y Social Web3 - Curso Intro a Cripto Clase 6",
+    blurb: "Guest class on NFTs, POAPs, and social Web3.",
+    href: "https://www.youtube.com/watch?v=mT2KhJ63lVo",
+  },
+  {
+    source: "Joaquín Muntaner",
+    title: "Episodio 4 - con Gonzalo Silman - Co-founder @WakeUpLabs",
+    blurb: "Podcast interview on building WakeUp Labs.",
+    href: "https://www.youtube.com/watch?v=GQHkUH1fn40",
+  },
+  {
+    source: "MundoDinero",
+    title: "GRAN SEMANA para SOLANA ¿Hasta dónde puede llegar?",
+    blurb: "Market commentary on Solana and the crypto week.",
+    href: "https://www.youtube.com/watch?v=xKSnMaHBqVo",
+  },
+  {
+    source: "MundoDinero",
+    title: "Cuál es el principal proyecto detrás de Ethereum hoy",
+    blurb: "Discussion on Ethereum's main projects and market context.",
+    href: "https://www.youtube.com/watch?v=I32_sRktNKY",
+  },
+  {
+    source: "CryptoHub",
+    title: "CryptoHub Space Vol. #3",
+    blurb: "Live space conversation with the CryptoHub community.",
+    href: "https://www.youtube.com/watch?v=kLf5RHCVtok",
   },
 ] as const;
 

@@ -49,7 +49,7 @@ export function SiteHeader({
                 ) : null}
                 <a
                   href={item.href}
-                  className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors duration-150 hover:text-fg sm:text-[12px]"
+                  className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors duration-150 hover:text-accent sm:text-[12px]"
                 >
                   {item.label}
                 </a>
@@ -59,7 +59,7 @@ export function SiteHeader({
         ) : (
           <Link
             href="/"
-            className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors duration-150 hover:text-fg sm:text-[12px]"
+            className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted transition-colors duration-150 hover:text-accent sm:text-[12px]"
           >
             Back to home
           </Link>

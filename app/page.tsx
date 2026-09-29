@@ -7,12 +7,13 @@ import {
   brands,
   featuredProjects,
   investments,
+  mentions,
   writing,
 } from "@/data/site";
 
 export default function Home() {
   return (
-    <div className="flex min-w-0 flex-1 flex-col">
+    <div className="relative z-0 flex min-w-0 flex-1 flex-col">
       <SiteHeader variant="home" />
 
       <main className="mx-auto w-full min-w-0 max-w-[880px] flex-1 px-5 sm:px-10">
@@ -23,8 +24,8 @@ export default function Home() {
           </h2>
           <div className="mt-6 space-y-4 text-[16px] leading-[1.55] text-fg sm:text-[17px]">
             <p>
-              I&apos;m a simple guy who likes ambitious challenges and wants to
-              have fun while doing hard things.
+              I have fun challenging myself with ambitious projects, especially
+              when people say they can&apos;t be done.
             </p>
             <p>
               I studied economics at{" "}
@@ -150,6 +151,35 @@ export default function Home() {
                 </div>
                 <p className="mt-2 text-[15px] leading-[1.5] text-muted">
                   {piece.blurb}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section
+          id="mentions"
+          className="scroll-mt-24 border-t border-rule py-10 sm:py-16"
+        >
+          <h2 className="text-[22px] font-medium leading-[1.2] tracking-tight text-fg sm:text-[24px]">
+            Mentions, interviews &amp; talks
+          </h2>
+          <ul className="mt-8 divide-y divide-rule">
+            {mentions.map((item) => (
+              <li key={item.href} className="py-5 first:pt-0 last:pb-0">
+                <span className="font-mono text-[11px] uppercase tracking-[0.08em] text-muted">
+                  {item.source}
+                </span>
+                <div className="mt-1">
+                  <ExtLink
+                    href={item.href}
+                    className="text-[17px] font-medium text-fg underline-offset-[3px] hover:text-accent hover:underline"
+                  >
+                    {item.title}
+                  </ExtLink>
+                </div>
+                <p className="mt-2 text-[15px] leading-[1.5] text-muted">
+                  {item.blurb}
                 </p>
               </li>
             ))}
