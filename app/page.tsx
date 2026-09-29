@@ -22,34 +22,29 @@ export default function Home() {
           <h2 className="text-[22px] font-medium leading-[1.2] tracking-tight text-fg sm:text-[24px]">
             About
           </h2>
-          <div className="mt-6 space-y-4 text-[16px] leading-[1.55] text-fg sm:text-[17px]">
+          <div className="mt-6 text-[16px] leading-[1.55] text-fg sm:text-[17px]">
             <p>
-              I have fun challenging myself with ambitious projects, especially
-              when people say they can&apos;t be done.
-            </p>
-            <p>
-              I studied economics at{" "}
+              I have fun taking on ambitious projects, especially the ones
+              people say can&apos;t be done. That&apos;s what pulled me into
+              economics at{" "}
               <ExtLink href={brands.utdt} className="prose-link">
                 Universidad Torcuato Di Tella
-              </ExtLink>{" "}
-              to understand the mistakes Argentina made in economic policy.
-            </p>
-            <p>
-              I built{" "}
+              </ExtLink>
+              , trying to understand what Argentina kept getting wrong in
+              economic policy, and later into building{" "}
               <ExtLink href={brands.wakeup} className="prose-link">
                 WakeUp Labs
               </ExtLink>
-              , a software development company that helped startups and
-              fintechs. We ran 25+ people at once, and worked with clients
-              around the world like{" "}
+              , a software company that helped startups and fintechs. We grew to
+              25+ people and worked with clients around the world, from{" "}
               <ExtLink href={brands.coinbase} className="prose-link">
                 Coinbase
-              </ExtLink>
-              ,{" "}
+              </ExtLink>{" "}
+              and{" "}
               <ExtLink href={brands.arbitrum} className="prose-link">
                 Arbitrum
               </ExtLink>{" "}
-              and{" "}
+              to{" "}
               <ExtLink href={brands.cocaCola} className="prose-link">
                 The Coca-Cola Company
               </ExtLink>

@@ -46,6 +46,7 @@ export type Project = {
   tag: string;
   href: string | null;
   image: string | null;
+  imageFit?: "cover" | "contain";
 };
 
 export const projects: readonly Project[] = [
@@ -57,6 +58,7 @@ export const projects: readonly Project[] = [
     tag: "Operator / Builder · 2025-2026",
     href: "https://www.biodec.com.ar/",
     image: "/images/biodec.png",
+    imageFit: "contain",
   },
   {
     slug: "wakeup-labs",
@@ -140,58 +142,39 @@ export const writing = [
 
 export const mentions = [
   {
-    source: "TN Tecno",
-    title:
-      "Criptomonedas y testamentos: cómo se heredan los bienes digitales",
-    blurb: "Quoted on crypto inheritance, cold wallets, and MultiSig best practices.",
+    title: "Criptomonedas y testamentos",
     href: "https://tn.com.ar/tecno/novedades/2022/06/19/criptomonedas-y-testamentos-como-se-heredan-los-bienes-digitales/",
   },
   {
-    source: "TN Tecno",
-    title: "Play-to-earn: videojuegos que recompensan con criptoactivos",
-    blurb: "Interviewed on play-to-earn, gaming, and crypto incentives.",
+    title: "Play-to-earn",
     href: "https://tn.com.ar/tecno/juegos/2021/08/27/todo-sobre-la-movida-play-to-earn-los-videojuegos-que-recompensan-al-usuario-con-criptoactivos/",
   },
   {
-    source: "Politólogos al Whisky",
-    title: "La adopción de Bitcoin en El Salvador",
-    blurb: "Acknowledged for feedback on Bitcoin legal tender in El Salvador.",
+    title: "Bitcoin en El Salvador",
     href: "https://politologosalwhisky.com/2021/10/14/la-adopcion-de-bitcoin-en-el-salvador-el-dia-en-que-bitcoin-paso-de-puro-verso-a-cancion-de-masas/",
   },
   {
-    source: "SEED Latam",
-    title: "DAO Stack Essentials: Where Tooling Is Needed Most?",
-    blurb: "Panel talk on DAO tooling and where builders need better stack support.",
+    title: "DAO Stack Essentials",
     href: "https://www.youtube.com/watch?v=67acXiQyowE",
   },
   {
-    source: "Solow",
-    title: "NFTs, POAP y Social Web3 - Curso Intro a Cripto Clase 6",
-    blurb: "Guest class on NFTs, POAPs, and social Web3.",
+    title: "NFTs, POAP y Social Web3",
     href: "https://www.youtube.com/watch?v=mT2KhJ63lVo",
   },
   {
-    source: "Joaquín Muntaner",
-    title: "Episodio 4 - con Gonzalo Silman - Co-founder @WakeUpLabs",
-    blurb: "Podcast interview on building WakeUp Labs.",
+    title: "Ep. 4 · WakeUp Labs",
     href: "https://www.youtube.com/watch?v=GQHkUH1fn40",
   },
   {
-    source: "MundoDinero",
-    title: "GRAN SEMANA para SOLANA ¿Hasta dónde puede llegar?",
-    blurb: "Market commentary on Solana and the crypto week.",
+    title: "Semana Solana",
     href: "https://www.youtube.com/watch?v=xKSnMaHBqVo",
   },
   {
-    source: "MundoDinero",
-    title: "Cuál es el principal proyecto detrás de Ethereum hoy",
-    blurb: "Discussion on Ethereum's main projects and market context.",
+    title: "Ethereum hoy",
     href: "https://www.youtube.com/watch?v=I32_sRktNKY",
   },
   {
-    source: "CryptoHub",
-    title: "CryptoHub Space Vol. #3",
-    blurb: "Live space conversation with the CryptoHub community.",
+    title: "CryptoHub Space #3",
     href: "https://www.youtube.com/watch?v=kLf5RHCVtok",
   },
 ] as const;

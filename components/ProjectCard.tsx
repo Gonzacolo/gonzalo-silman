@@ -12,9 +12,9 @@ export function ProjectCard({
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-xl border border-rule bg-surface shadow-[0_1px_2px_rgba(28,24,20,0.06)]">
       <div
-        className={`relative w-full shrink-0 border-b border-rule bg-parchment ${
-          compact ? "aspect-[16/10]" : "aspect-[2/1]"
-        }`}
+        className={`relative w-full shrink-0 border-b border-rule ${
+          project.imageFit === "contain" ? "bg-white" : "bg-parchment"
+        } ${compact ? "aspect-[16/10]" : "aspect-[2/1]"}`}
         aria-hidden={!project.image}
       >
         {project.image ? (
@@ -22,7 +22,11 @@ export function ProjectCard({
             src={project.image}
             alt=""
             fill
-            className="object-cover"
+            className={
+              project.imageFit === "contain"
+                ? "object-contain p-6 sm:p-8"
+                : "object-cover"
+            }
             sizes={
               compact
                 ? "(max-width: 640px) 100vw, 420px"
