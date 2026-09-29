@@ -45,6 +45,14 @@ export default function Home() {
                 Arbitrum
               </ExtLink>{" "}
               to{" "}
+              <ExtLink href={brands.uphold} className="prose-link">
+                Uphold
+              </ExtLink>
+              ,{" "}
+              <ExtLink href={brands.sandbox} className="prose-link">
+                The Sandbox
+              </ExtLink>
+              , and{" "}
               <ExtLink href={brands.cocaCola} className="prose-link">
                 The Coca-Cola Company
               </ExtLink>

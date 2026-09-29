@@ -26,6 +26,8 @@ export const brands = {
   wakeup: "https://www.wakeuplabs.io/",
   coinbase: "https://www.coinbase.com/",
   arbitrum: "https://arbitrum.io/",
+  uphold: "https://uphold.com/",
+  sandbox: "https://www.sandbox.game/",
   cocaCola: "https://www.coca-cola.com/",
 } as const;
 
