@@ -46,7 +46,6 @@ export type Project = {
   tag: string;
   href: string | null;
   image: string | null;
-  imageFit?: "cover" | "contain";
 };
 
 export const projects: readonly Project[] = [
@@ -58,7 +57,6 @@ export const projects: readonly Project[] = [
     tag: "Operator / Builder · 2025-2026",
     href: "https://www.biodec.com.ar/",
     image: "/images/biodec.png",
-    imageFit: "contain",
   },
   {
     slug: "wakeup-labs",
